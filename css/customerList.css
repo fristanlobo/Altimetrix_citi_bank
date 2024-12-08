@@ -1,0 +1,176 @@
+.customer-list-container {
+  padding: 20px;
+}
+
+/***/
+.customer-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.customer-table th, .customer-table td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.customer-table th:first-child, .customer-table td:first-child {
+  width: 40px;
+}
+
+.customer-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-pic {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.customer-name {
+  font-weight: bold;
+}
+
+.customer-username {
+  color: #666;
+  font-size: 12px;
+}
+
+.role-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+}
+
+.role-badge.general {
+  background-color: #007bff;
+}
+
+.role-badge.admin {
+  background-color: #e83e8c;
+}
+
+.role-badge.creator {
+  background-color: #fd7e14;
+}
+
+.action-button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #999;
+}
+
+.action-button:hover {
+  color: #000;
+}
+
+
+/***/
+
+
+
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.tabs {
+  display: flex;
+  gap: 0; /* Remove the spacing between the buttons */
+}
+
+.tab {
+  padding: 8px 16px;
+  border: 1px solid #ddd; /* Border to separate the buttons */
+  border-right: none; /* Remove right border to make them appear seamless */
+  background-color: #f9f9f9;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.tab:last-child {
+  border-right: 1px solid #ddd; /* Add right border only to the last button */
+}
+
+.tab:hover {
+  background-color: #eaeaea;
+}
+
+.tab.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+
+/* Search and filters section */
+/* Search Filters Section */
+.search-filters {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.search-bar-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  width: 300px; /* Smaller search bar width */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.search-icon {
+  padding: 0 10px;
+  font-size: 14px; /* Adjust icon size */
+  color: #999;
+}
+
+.search-bar {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 6px 10px;
+  font-size: 12px; /* Smaller text size */
+  box-sizing: border-box;
+}
+
+.search-bar-container:focus-within {
+  border-color: #007bff; /* Highlight border on focus */
+}
+
+.filters-button {
+  padding: 6px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.filters-button:hover {
+  background-color: #0056b3;
+}

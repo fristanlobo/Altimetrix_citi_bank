@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kahf Tech Dashboard</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/customerList.css"/>
+  <link rel="stylesheet" href="./css/sideBar.css"/>
+  <link rel="stylesheet" href="./css/header.css"/>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar"></div>
+
+    <!-- Main Content (Header and Customer List) -->
+    <div class="main-content">
+      <!-- Header -->
+      <div id="header" class="header"></div>
+      <!-- Customer List -->
+      <div id="customer-list" class="customer-list"></div>
+    </div>
+  </div>
+
+  <script>
+    // Function to load HTML content dynamically
+    function loadComponent(url, elementId) {
+      fetch(url)
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById(elementId).innerHTML = data;
+        })
+        .catch(error => console.error('Error loading component:', error));
+    }
+
+    // Load components when the page loads
+    window.onload = function () {
+      loadComponent('./components/sideBar.html', 'sidebar');
+      loadComponent('./components/header.html', 'header');
+      loadComponent('./components/customerList.html', 'customer-list');
+    };
+  </script>
+</body>
+</html>

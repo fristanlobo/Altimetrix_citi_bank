@@ -1,0 +1,35 @@
+/* Reset margin and padding to ensure consistent layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set the container to a flexbox layout */
+  .container {
+    display: flex;
+    height: 100vh;  /* Full viewport height */
+    width: 100%;    /* Ensure full width */
+  }
+ 
+
+  
+  /* Main content styles */
+  .main-content {
+    display: flex;
+    flex-direction: column; /* Stack header and customer list vertically */
+    flex-grow: 1; /* Main content takes up remaining space */
+    padding: 20px;
+  }
+  
+  /* Header styling */
+  .header {
+    margin-bottom: 20px; /* Space between header and customer list */
+  }
+  
+  /* Customer list styling */
+  .customer-list {
+    flex-grow: 1; /* Allow the customer list to expand and fill the space */
+    overflow-y: auto; /* Allow scrolling if the content exceeds the height */
+  }
+  
